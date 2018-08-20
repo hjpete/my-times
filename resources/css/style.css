@@ -1,0 +1,69 @@
+header {
+  display: flex;
+  align-items: center;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  height: 80px;
+}
+.logo {
+  display: flex;
+  color: MediumAquamarine;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
+}
+nav {
+  padding-right: 30px;
+}
+nav span {
+  display: inline-block;
+  color: black;
+}
+div {
+  border: 1px solid black;
+}
+.main {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+.main-story .story-head{
+  background: url(../images/img-story-main.png);
+  width: 630px;
+  margin-top: 0;
+  font-size: 40px;
+}
+.image-text {
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+.earth-story .story-image {
+  background: url(../images/img-story-2.png);
+}
+.camera-story .story-image {
+  background: url(../images/img-story-3.png);
+}
+.cat-story .story-image {
+  background: url(../images/img-story-1.png);
+}
