@@ -1,11 +1,21 @@
+body {
+  margin: 0;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
 header {
   display: flex;
+  position: fixed;
   align-items: center;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   width: 100%;
   height: 80px;
+  border-bottom: 1px solid black;
+  background: white;
+  z-index: 1;
 }
 .logo {
   display: flex;
@@ -37,6 +47,7 @@ nav a {color: black;}
   display: flex;
   flex-direction: column;
   margin-right: 32px;
+  padding-top: 100px;
 }
 .column.large {
   width: 630px;
