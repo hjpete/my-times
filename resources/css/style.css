@@ -14,18 +14,24 @@ header {
   flex-grow: 1;
   padding-left: 30px;
 }
+.logo img {
+  margin-right: 10px;
+}
 nav {
   padding-right: 30px;
 }
 nav span {
   display: inline-block;
-  color: black;
+  padding: 20px 10px;
 }
-div {
-  border: 1px solid black;
-}
+nav a {color: black;}
+
 .main {
   display: flex;
+  justify-content: center;
+  width: 1400px;
+  margin: 0 auto 80px auto;
+
 }
 .column {
   display: flex;
@@ -42,6 +48,7 @@ div {
 
 .column.small {
   width: 240px;
+  flex-direction: column;
 }
 
 .main-story .story-head{
@@ -50,14 +57,43 @@ div {
   margin-top: 0;
   font-size: 40px;
 }
+.small-stories {
+  display: flex;
+  justify-content: space-between;
+}
+.small-stories .story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.small-stories .inner-column {
+  display: flex;
+  flex-direction: column;
+}
+.story-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+}
 .image-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 300px;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
+  margin-left: 10px;
+  text-align: center;
 }
+.main-story .image-text {
+  font-size: 40px;
+  text-align: left;
+}
+
 .earth-story .story-image {
   background: url(../images/img-story-2.png);
 }
@@ -66,4 +102,53 @@ div {
 }
 .cat-story .story-image {
   background: url(../images/img-story-1.png);
+}
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.bite {
+  display: block;
+  padding: 10px 15px;
+  font-size: 12px;
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  color: DimGray;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: MediumAquamarine;
+  font-family: Verdana;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+
+}
+.footer-text .title {
+  display: inline-block;
+  padding-right: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+  font-family: Times;
+
+}
+footer nav {
+  display: inline-block;
+  padding-left: 25px;
+}
+footer .copyright {
+  font-size: 12px;
+  font-family: Verdana;
+  text-align: center;
 }
